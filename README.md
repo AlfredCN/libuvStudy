@@ -2,7 +2,8 @@
 > 学习libuv
 
 ### 参考资料
-[资料1](http://www.nowx.org/uvbook/)
+1.[资料1](http://www.nowx.org/uvbook/)
+2.[资料2](http://www.kancloud.cn/wizardforcel/uvbook/146851)
  
 ### linux下编译libuv
 
