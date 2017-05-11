@@ -1,32 +1,13 @@
-// testlibuv.cpp : 定义控制台应用程序的入口点。
-//
-
 #include "stdafx.h"
-#include <stdlib.h>
-#include <uv.h>
+#include "cat.h"
 
-
-int64_t counter = 0;
-
-void wait_for_a_while(uv_idle_t* handle) {
-	counter++;
-
-	if (counter >= 10000){
-		printf("over");
-		uv_idle_stop(handle);
-	}
-		
-}
-
-int main() {
-	uv_idle_t idler;
-
-	uv_idle_init(uv_default_loop(), &idler);
-	uv_idle_start(&idler, wait_for_a_while);
-
-	printf("Idling...\n");
+int main(int argc, char **argv){
+	char path[256] = "E://a.txt";
+	uv_fs_open(uv_default_loop(), &open_req, path, O_RDONLY, 0, on_open);
 	uv_run(uv_default_loop(), UV_RUN_DEFAULT);
 
-	uv_loop_close(uv_default_loop());
+	uv_fs_req_cleanup(&open_req);
+	uv_fs_req_cleanup(&read_req);
+	uv_fs_req_cleanup(&write_req);
 	return 0;
 }

@@ -7,7 +7,7 @@
  
 ### linux下编译libuv
 
-``` sh
+``` bash
 $ cd libuv/
 $ sh autogen.sh
 $ ./configure
@@ -16,9 +16,17 @@ $ make check
 $ make install
 ```
 
+### linux下编译自己的项目
+
+这里以 `main.c` 为例，`libuv.so` 在 `/mnt/hgfs/libuvStudy/libuv/.libs` 目录下
+
+``` bash
+gcc main.c -L /mnt/hgfs/libuvStudy/libuv/.libs -luv -o main
+```
+
 ### windows下编译libuv
 
-```
+``` bash
 1. 安装 python 2.7.x
 2. 安装 gyp
    解压当前目录下的安装包 `gyp-2015.zip`，进入文件夹目录，启动 cmd ,执行命令 python setup.py install
@@ -29,14 +37,16 @@ $ make install
 
 ### windows 下项目配置
 
-```
+``` bash
 1. 项目属性 -> c/c++ -> 预处理器 -> 预处理器定义
    添加预处理定义宏:
-     WIN32
-     _DEBUG
-     _CONSOLE
-     _LIB
-     _CRT_SECURE_NO_DEPRECATE
+    WIN32
+	_CONSOLE
+	_LIB
+	_CRT_SECURE_NO_DEPRECATE
+	_CRT_NONSTDC_NO_DEPRECATE
+	DEBUG
+	_DEBUG
 	 
 2. 项目属性 -> c/c++ -> 代码生成 -> 运行库 
 	选择运行库为 `多线程调试(/MTD)`

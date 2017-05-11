@@ -1,14 +1,15 @@
-﻿生成启动时间为 2017/5/11 16:15:51。
+﻿生成启动时间为 2017/5/11 18:41:17。
      1>项目“C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\testlibuv\testlibuv.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\ff\Desktop\git_pro\libuvStudy\libuv\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\testlibuv.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt testlibuv.cpp
-         testlibuv.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\Users\ff\Desktop\git_pro\libuvStudy\libuv\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D DEBUG /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\testlibuv.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt cat.cpp
+         cat.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\Debug\testlibuv.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\ff\Desktop\git_pro\libuvStudy\libuv\Debug\lib advapi32.lib iphlpapi.lib psapi.lib shell32.lib user32.lib userenv.lib ws2_32.lib libuv.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\Debug\testlibuv.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\Debug\testlibuv.lib" /MACHINE:X86 Debug\stdafx.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\Debug\testlibuv.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\ff\Desktop\git_pro\libuvStudy\libuv\Debug\lib advapi32.lib iphlpapi.lib psapi.lib shell32.lib user32.lib userenv.lib ws2_32.lib libuv.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\Debug\testlibuv.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\Debug\testlibuv.lib" /MACHINE:X86 Debug\cat.obj
+         Debug\stdafx.obj
          Debug\testlibuv.obj
          testlibuv.vcxproj -> C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\Debug\testlibuv.exe
      1>已完成生成项目“C:\Users\ff\Desktop\git_pro\libuvStudy\code\testlibuv\testlibuv\testlibuv.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:00.75
+已用时间 00:00:00.71
