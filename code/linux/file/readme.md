@@ -127,8 +127,5 @@ int fseek(FILE *stream, long offset, int fromwhere);
   成功，返回0，失败返回-1，并设置error的值，可以用perror()函数输出错误
 ```
 
-#### 10.  `create`
 
-``` c
-
-```
+#### 其他api参考 [c语言文件操作资料](http://www.jb51.net/article/37688.htm)
