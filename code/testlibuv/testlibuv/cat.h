@@ -9,16 +9,20 @@
 #include <process.h>
 #include <uv.h>
 
-void on_read(uv_fs_t *req);
-void on_write(uv_fs_t *req);
-void on_open(uv_fs_t *req);
+	void on_read(uv_fs_t *req);
+	void on_write(uv_fs_t *req);
+	void on_open(uv_fs_t *req);
+	void callcat();
 
- extern uv_fs_t open_req;
- extern uv_fs_t read_req;
- extern uv_fs_t write_req;
+	extern uv_fs_t open_req;
+	extern uv_fs_t read_req;
+	extern uv_fs_t write_req;
 
-static char buffer[1024];
+	static char buffer[1024];
 
-static uv_buf_t iov;
+	static uv_buf_t iov;
+
+
+
 
 #endif // _CAT_H__
